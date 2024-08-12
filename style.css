@@ -8,6 +8,16 @@ body {
   margin: unset;
 }
 
+img {
+  vertical-align: top;
+}
+
+h1 {
+  margin: unset;
+  font-weight: unset;
+  font-size: unset;
+}
+
 /* Layouts */
 .l_wrapper {
   width: 960px;
@@ -23,6 +33,15 @@ body {
 .header {
   background-color: #F4F4F4;
 }
+
+.header-inside h1 {
+  box-shadow: inset 0 0 30px red;
+}
+
+.header-inside img {
+  box-shadow: inset 0 0 30px blue;
+}
+
 
 .contents {
 

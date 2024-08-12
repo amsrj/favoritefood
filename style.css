@@ -121,7 +121,7 @@ body {
 }
 
 /* Mobile */
-@media ( max-width: 600px ) {
+@media ( max-width: 480px ) {
   .l_col_mobile_12_12 { width: 100%; }
   .l_col_mobile_11_12 { width: 91.66666667%; }
   .l_col_mobile_10_12 { width: 83.33333333%; }

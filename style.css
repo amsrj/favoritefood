@@ -20,8 +20,10 @@ h1 {
 
 /* Layouts */
 .l_wrapper {
-  width: 960px;
+  max-width: 960px;
+  width: auto;
   margin: 0 auto;
+  padding: 0 20px;
   box-shadow: inset 0 0 20px orange;
 }
 
@@ -41,7 +43,6 @@ body {
 }
 
 .header-inside h1 {
-  box-shadow: inset 0 0 30px red;
   flex-basis: 0;
   flex-grow: 1;
   min-width: 0;
@@ -52,7 +53,6 @@ body {
 }
 
 .header-logo {
-  box-shadow: inset 0 0 30px blue;
   width: 124px;
 }
 

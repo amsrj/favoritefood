@@ -25,6 +25,10 @@ h1, h2 {
   font-size: unset;
 }
 
+strong {
+  font-weight: unset;
+}
+
 /* Layouts */
 .l_wrapper {
   max-width: 960px;
@@ -155,6 +159,11 @@ body {
   padding: 20px;
   color: #666;
   font-size: 14px;
+}
+
+.card-contents strong {
+  font-weight: 600;
+  color: var(--point-color);
 }
 
 .card-footer {

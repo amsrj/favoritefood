@@ -70,6 +70,8 @@ strong {
 /* Variables */
 :root {
   --point-color: #f60;
+
+  --line-clamp: 8; /* 줄 제한 */
 }
 
 /* Typography */
@@ -152,6 +154,17 @@ body {
 
   margin-right: 14px;
   color: var(--point-color);
+
+}
+
+.card-header h2::before {
+  content: ' ';
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  background-color: currentColor;
+  border-radius: 50%;
+  margin-right: 0.2em;
 }
 
 .card-contents {
@@ -160,9 +173,15 @@ body {
   font-size: 14px;
 
   box-shadow: inset 0 0 20px red;
-  height: 84px;
   margin: 20px;
   overflow: hidden;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--line-clamp);
+
+  line-height: 1.4;
+  height: calc( 1.4em * var(--line-clamp) );
 }
 
 .card-contents strong {

@@ -163,6 +163,7 @@ body {
   margin-right: 14px;
   color: var(--point-color);
 
+
 }
 
 .card-header h2::before {
@@ -212,6 +213,12 @@ body {
   font-size: 12px;
   border-radius: 12px;
   margin: 2px 0;
+
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
 }
 
 .tag::before {

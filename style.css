@@ -213,8 +213,9 @@ body {
   font-size: 12px;
   border-radius: 12px;
   margin: 2px 0;
-
+  
   white-space: nowrap;
+  vertical-align: middle;
   overflow: hidden;
   max-width: 100%;
   box-sizing: border-box;
